@@ -1,5 +1,5 @@
-import { UserRole } from 'src/shared/enums/user-role.enum';
-import { generateHash, generateSalt } from 'src/shared/security.helper';
+import { UserRole } from '../../shared/enums/user-role.enum';
+import { generateHash, generateSalt } from '../../shared/security.helper';
 import {
   BeforeInsert,
   BeforeUpdate,

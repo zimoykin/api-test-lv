@@ -9,10 +9,10 @@ import {
 } from '@nestjs/common';
 import { UsersService } from './users.service';
 import { ApiBearerAuth, ApiOperation, ApiTags } from '@nestjs/swagger';
-import { AuthUser } from 'src/shared/decorators/user.decorator';
-import { IAuthUser } from 'src/shared/interfaces/authorized-user.interface';
+import { AuthUser } from '../shared/decorators/user.decorator';
+import { IAuthUser } from '../shared/interfaces/authorized-user.interface';
 import { UserUpdateDto } from './dtos/user-update.dto';
-import { UserAccess } from 'src/shared/guards/user-access.decorator';
+import { UserAccess } from '../shared/guards/user-access.decorator';
 import { UserCreateDto } from './dtos/user-create.dto';
 import { UserOutputDto } from './dtos/user-output.dto';
 import { plainToInstance } from 'class-transformer';

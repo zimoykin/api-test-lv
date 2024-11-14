@@ -10,7 +10,7 @@ import {
 } from '@nestjs/common';
 import { UsersService } from './users.service';
 import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
-import { AdminAccess } from 'src/shared/guards/admin-access.decorator';
+import { AdminAccess } from '../shared/guards/admin-access.decorator';
 import { AdminUserUpdateDto } from './dtos/admin-user-update.dto';
 import { plainToInstance } from 'class-transformer';
 import { UserOutputDto } from './dtos/user-output.dto';
